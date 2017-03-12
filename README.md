@@ -32,6 +32,9 @@ The driving_log is a csv file which contains 6 columns.First three columns speci
 The fourth column specifies the valuesof the steering associated with each image,while the fifth column specifies the acceleration and sixth column gives the speed of car.
 NOTE: The values and names of images in driving_log.csv file are taken for the dataset which is shared on above google drive link.  
 
+# Driving the car autonomously
+Use the drive.py file to communicate between the simulator and the our CNN model. Also we need to a '.h5' file of the CNN model along with this drive.py file for complete autonomous driving using the CNN model we train. 
+
 # Problems that are being faced
 1. After 4 to 5 epochs the network starts overfitting. The test accuracy remains around 80%. Also this 80% accuracy on test data does not justify the results it gives.
 2. The output I want to predict is the steering angle which lies between the values -1 to +1. The network is not able to predict the floating values lying between the above range of -1 to +1. 
